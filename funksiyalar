@@ -1,0 +1,105 @@
+#1-misol
+#def powerA3(a):
+ #   print(a**3)
+#powerA3(20)
+#powerA3(5.5)
+#2-misol
+#def powerA234(a):
+    #print(a**2)
+   # print(a**3)
+    #print(a**4)
+
+
+# Asosiy qism
+#import math
+#def MEAN(x, y):
+#    am = (x + y) / 2
+#    gm = math.sqrt(x * y)
+#    return am, gm
+
+# Sonlarni kiritish
+#A = float(input("A: "))
+#B = float(input("B: "))
+#C = float(input("C: "))
+#D = float(input("D: "))
+
+# Juftliklarni hisoblash va chiqarish
+#print("(A, B):", MEAN(A, B))
+#print("(A, C):", MEAN(A, C))
+#print("(A, D):", MEAN(A, D))
+
+#4-misol
+# 
+#import math
+#
+#def Triangle(a):
+#    P = 3 * a
+#    S = (math.sqrt(3) / 4) * a**2
+#    return P, S
+#
+# 3 ta uchburchak uchun hisoblash
+#for i in range(1, 4):
+ #   a = float(input(f"{i}-uchburchak tomonini kiriting: "))
+ #   p, s = Triangle(a)
+ #   print(f"Perimetri: {p}, Yuzasi: {s:.2f}")
+ 
+#5-misol
+#def RectPS(x1, y1, x2, y2):
+##    S=abs(x2-x1)*abs(y2-y1)
+#    print(P, S)
+#    return(P, S)
+#x1=int(input())
+#y1=int(input())
+#x2=int(input())
+#y2=int(input())
+#RectPS(x1, y1, x2, y2)
+
+#6-misol
+#def DigitCountSum(n):
+#    s = str(n)
+#    return len(s), sum(map(int, s))
+#
+#for n in map(int, input("a b c sonlarini kiriting: ").split()):
+ #   soni, yigindi = DigitCountSum(n)
+ #   print(f"Soni: {soni}, Yig'indisi: {yigindi}")
+ 
+#7-misol
+#A=int(input("a="))
+#B=int(input("b="))
+#C=int(input("c="))
+#def InvertDigit(a):
+   # birlar = a % 10
+   # onlar = a //10
+   # yuzlar = a // 100
+
+   # if a >= 10 and a<100:
+     #   print(10*birlar + onlar)
+   #elif a < 1000 and a>=100 :
+       # print(100*birlar + 10*onlar + yuzlar)
+   
+    #InvertDigit(A)
+    #InvertDigit(B)
+    #InvertDigit(C)
+    #7-misol
+#def InvertDigit(n):
+#    res = 0
+#    while n > 0:
+#        res = res * 10 + n % 10
+#        n //= 10
+#    return res
+#
+#a = int(input())
+#b = int(input())
+#c = int(input())
+#
+#print(InvertDigit(a))
+#print(InvertDigit(b))
+#print(InvertDigit(c))
+#8misol
+def AddRightDigit(son,raqam):
+    return son*10+raqam
+
+k=int(input())
+r=int(input())
+
+print(AddRightDigit(k, r))
